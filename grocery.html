@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="maincss.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<div class="super_container">
+	<header class="header">
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					
+							<div class="top_bar_user">
+								<div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
+								<div><a href="register.php">Register</a></div>
+								<div><a href="login.php">Sign in</a></div>
+							</div>
+				</div>
+			</div>		
+		</div>
+		<div class="header_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-sm-3 col-3 order-1">
+						<div class="logo_container">
+							<div class="logo"><a href="#">Sok</a></div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+						<div class="header_search">
+							<div class="header_search_content">
+								<div class="header_search_form_container">
+									<form action="#" class="header_search_form clearfix">
+										<input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+										
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+							<div class="cart">
+									<div class="cart_content">
+                    <button class="checkout">  Cart  </button>			<br>							
+                    <span> Rs 0</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main_nav">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+						<div class="main_nav_content d-flex flex-row">
+							<div class="main_nav_menu">
+								<ul class="standard_dropdown main_nav_dropdown">
+									<li class="hassubs"><a href="grocery.html">Grocery<i class="fas fa-chevron-down"></i></a></li>
+									<li class="hassubs"><a href="neww.html">Fruits<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="vegneww.html">Vegetables<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="meat.html">Meat<i class="fas fa-chevron-down"></i></a></li>
+                                    <li><a href="dairy.html">Dairy Product<i class="fas fa-chevron-down"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+</div>
+</head>
+<body >
+    <br><br>
+    <div class="products">
+        <h2>Grocery </h2>
+        <div class="sorting">
+          <label for="sort-by">Sort by:</label>
+          <select id="sort-by">
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="price-high-to-low">Price: High to Low</option>
+            <option value="name-a-to-z">Name: A to Z</option>
+            <option value="name-z-to-a">Name: Z to A</option>
+          </select>
+        </div>
+        <div class="product-list">
+          
+          <div class="product" data-name="Product" data-price="60.00">
+            <h3>Basmati Rice</h3>
+            <img src="basmati.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $60.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product" data-name="Product" data-price="20.00">
+            <h3>Oil</h3>
+            <img src="oil.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $20.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product" data-name="Product" data-price="25.00">
+            <h3>Salt & Sugar</h3>
+            <img src="salt&sug.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $50.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product" data-name="Product" data-price="30.00">
+            <h3>Chilli Powdwer</h3>
+            <img src="chill.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $30.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product" data-name="Product" data-price="40.00">
+            <h3>Dhalls</h3>
+            <img src="dhall.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $40.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product" data-name="Product" data-price="70.00">
+            <h3>Maida</h3>
+            <img src="maida.jpg" class="img-rounded "  alt="Cinque Terre" width="200" height="200" > <br>
+            <br><span>product 3 - $70.00</span>
+            <input type="number" value="1" min="1" max="10" class="quantity"><br><br>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        const products = document.querySelectorAll('.product');
+        const cartTotal = document.querySelector('.cart span');
+        let total = 0;
+    
+        products.forEach(product => {
+          const button = product.querySelector('.add-to-cart');
+          const name = product.getAttribute('data-name');
+          const price = parseFloat(product.getAttribute('data-price'));
+          const quantityInput = product.querySelector('.quantity');
+    
+          button.addEventListener('click', () => {
+            const quantity = parseInt(quantityInput.value);
+            total += price * quantity;
+            cartTotal.innerText = `Cart Total: $${total.toFixed(2)}`;
+          });
+        });
+    
+        const checkoutButton = document.querySelector('.checkout');
+        checkoutButton.addEventListener('click', () => {
+          alert(`Total: $${total.toFixed(2)}`);
+          total = 0;
+          cartTotal.innerText = `Cart Total: $${total.toFixed(2)}`;
+        });
+      </script>
+</body>
+</html>
